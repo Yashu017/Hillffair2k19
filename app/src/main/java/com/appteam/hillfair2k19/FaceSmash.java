@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Context;
+import android.graphics.Matrix;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -14,6 +15,8 @@ import android.os.Handler;
 
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
+import android.view.ScaleGestureDetector;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
@@ -41,6 +44,9 @@ import java.util.Iterator;
 public class FaceSmash extends Fragment {
 
 
+    //private ImageView firstImage,secondImage;
+    private ScaleGestureDetector scaleGestureDetector;
+    private Matrix matrix;
 
     Animation outAnimation;
     Animation inAnimation;
@@ -69,11 +75,22 @@ public class FaceSmash extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         urls=new ArrayList<>();
+      //  firstImage=(ImageView) findViewById(R.id.firstPersonImage);
+        //secondImage= (ImageView) findViewById(R.id.secondPersonImage);
+        //scaleGestureDetector=new ScaleGestureDetector(this,new ScaleListener());
+
+
 
 //        users=new ArrayList<>();
 
 
     }
+    //@Override
+    //public boolean onTouchEvent(MotionEvent ev)
+   // {
+     //   scaleGestureDetector.onTouchEvent(ev);
+       // return(true);
+   // }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -404,6 +421,19 @@ else{
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
     }
+
+   // private class ScaleListener extends ScaleGestureDetector.SimpleOnScaleGestureListener{
+     //   @Override
+       // public boolean onScale(ScaleGestureDetector detector) {
+         //   float scaleFactor = detector.getScaleFactor();
+           // scaleFactor =Math.max(0.1f, Math.min(scaleFactor ,0.5f));
+            //matrix.setScale(scaleFactor,scaleFactor);
+            //firstImage.setImageMatrix(matrix);
+            //secondImage.setImageMatrix(matrix);
+
+          //  return true;
+        //}
+    //}
 
 //    void postresult(String imageUrl, User user){
 //

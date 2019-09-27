@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
 //        FaceSmash fragment = new FaceSmash();
-        com.appteam.hillfair2k19.fragments.SponsersFragment fragment = new com.appteam.hillfair2k19.fragments.SponsersFragment(this);
+        com.appteam.fragments.SponsersFragment fragment = new com.appteam.fragments.SponsersFragment(this);
 //        coreteam fragment = new coreteam(this);
         fragmentTransaction.add(R.id.fragmentHolder, fragment);
         fragmentTransaction.commit();
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 //        mVolleyService.getJsonObjectDataVolley("GETCALL","https://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22");
 
 //        GET REQUEST FOR JSON Array
-        mVolleyService.getJsonArrayDataVolley("GETJSONARRAYLIFESAVER","https://lifesaverapp.herokuapp.com/controlpolice");
+      //  mVolleyService.getJsonArrayDataVolley("GETJSONARRAYLIFESAVER","https://lifesaverapp.herokuapp.com/controlpolice");
 
 
         // POST REQUEST JSON BODY

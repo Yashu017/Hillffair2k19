@@ -43,7 +43,7 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.MyViewHolder> 
         holder.title.setText(team.getName());
         holder.position.setText(team.getPosition());
         if (!team.getImage().isEmpty()) {
-//            Picasso.with(activity).load(urls.get(2)).into(holder.image);
+            //Picasso.with(activity).load(urls.get(2)).into(holder.image);
 
             Picasso.with(activity).load(team.getImage()).resize(80, 80).centerCrop().into(holder.image);
         }

@@ -1,19 +1,15 @@
 package com.appteam.hillfair2k19.Activity;
 
+import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
-import android.view.View;
-
 import com.appteam.adapters.ContributorsAdaptor;
-import com.appteam.hillfair2k19.FaceSmash;
 import com.appteam.hillfair2k19.R;
-import com.appteam.hillfair2k19.fragments.SponsersFragment;
 import com.appteam.hillfair2k19.model.contributorsItem;
 
 import java.util.ArrayList;

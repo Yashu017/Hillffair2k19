@@ -69,22 +69,22 @@ public class coreteam extends Fragment {
 
     public void getData() {
         teamList.clear();
-        teamList.add(new Team("Captaion Marvel", "https://www.hdwallpapersfreedownload.com/uploads/large/super-heroes/captain-marvel-avengers-brie-larson-super-hero-hd-wallpaper.jpg", "Chief"));
-        teamList.add(new Team("Thanos", "https://pre00.deviantart.net/db91/th/pre/i/2017/197/8/0/thanos_wallpaper_16_by_rippenstain-dbghpzw.jpg", "Villan"));
-        teamList.add(new Team("Iron Mam", "https://wallpapersite.com/images/pages/ico_n/15263.jpg", "Hero"));
+//        teamList.add(new Team("Captaion Marvel", "https://www.hdwallpapersfreedownload.com/uploads/large/super-heroes/captain-marvel-avengers-brie-larson-super-hero-hd-wallpaper.jpg", "Chief"));
+//        teamList.add(new Team("Thanos", "https://pre00.deviantart.net/db91/th/pre/i/2017/197/8/0/thanos_wallpaper_16_by_rippenstain-dbghpzw.jpg", "Villan"));
+//        teamList.add(new Team("Iron Mam", "https://wallpapersite.com/images/pages/ico_n/15263.jpg", "Hero"));
         teamAdapter.notifyDataSetChanged();
 
         //Initialising
-//        initAndroidNetworkingCallback();
+       initAndroidNetworkingCallback();
         com.androidnetworking.AndroidNetworking.initialize(getActivity());
         com.appteam.hillfair2k19.AndroidNetworking androidNetworking = new com.appteam.hillfair2k19.AndroidNetworking(mResultCallbackAndroidNeworking,getActivity());
 
 //                 GET REQUEST SINGLE JSON OBJECT
-//        androidNetworking.getJsonArrayAndroidNetworking("GetCoreteam",activity.getString(R.string.baseUrl) + "coreteam");
+        androidNetworking.getJsonArrayAndroidNetworking("GetCoreteam",activity.getString(R.string.baseUrl) + "coreteam");
 
 
 //        GET REQUEST FOR JSON ARRAY
-//        androidNetworking.getJsonArrayAndroidNetworking("GETJSONARRAYFROMLIIFESAVER","https://lifesaverapp.herokuapp.com/controlpolice");
+        androidNetworking.getJsonArrayAndroidNetworking("GETJSONARRAYFROMLIIFESAVER","https://lifesaverapp.herokuapp.com/controlpolice");
 
 
 
